@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html>
+<head>
+	<title>KISAN||FARMER</title><meta charset="utf-8">
     <link rel="icon" href="homecss/img/logo1.png" type="png">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Farmer||HOME </title>
     <link rel="stylesheet" href="./homecss/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
 
 
-   
+
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
 
@@ -34,11 +33,89 @@
    
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-   
+   body {
+  margin: 0;
+  padding: 0;
+  background: url(https://picsum.photos/2500/1500?image=1041);
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0.625rem;
+}
+
+.box h2 {
+  margin: 0 0 1.875rem;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.box .inputBox {
+  position: relative;
+}
+
+.box .inputBox input {
+  width: 100%;
+  padding: 0.625rem 0;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 0.062rem;
+  margin-bottom: 1.875rem;
+  border: none;
+  border-bottom: 0.065rem solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.box .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.625rem 0;
+  font-size: 1rem;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label,
+.box .inputBox input:not([value=""]) ~ label {
+  top: -1.125rem;
+  left: 0;
+  color: #03a9f4;
+  font-size: 0.75rem;
+}
+
+.box input[type="submit"] {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #03a9f4;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  border-radius: 0.312rem;
+  font-size: 1rem;
+}
+
+.box input[type="submit"]:hover {
+  background-color: #1cb1f5;
+}
+
   </style>
-  </head>
-  <body style="background-color:#078B46">
-        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
                 <div class="container">
                         <a class="navbar-brand" href="index.html"><img class="" style="width: 100px;" src="homecss/img/logo1.png" width="50" height="50"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,148 +135,38 @@
               </nav>
 
 
-
-    <div class="pimg1">
+    <div class="pimg1" style="background-image: url('farmercss/img/ff1.jpg');">
       <div class="ptext" style="padding-top: 40px;">
           <br/>  <br/>  <br/>
-           <b style="font-size: 25px;color: white;opacity: 1;font-weight: bold;">You will see all this at KISAN 2020.<br/>
-Come, let us create a better future for farming.</b><br/>
-           <b style="    line-height: 1.1;
-           font-family: Lobster cursive;
-           margin-top: 1.5em;
-           font-size: 60px;
-           color: rgba(255, 255, 255, 0.75);
-           text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
-           text-transform: none;">Fields</b> <br/><br/>
-          <div>
-                <a href="#" target=" ">
-          <input type="button" style="box-shadow: 1px 1px 2px black, 0 0 25px #133041, 0 0 5px darkblue;margin: 10px;
-          border: 1px solid white;padding: 5px;
-          font-size: 19px; background: none;color: white;cursor: pointer;" value="&emsp;Farmer Login&emsp;">
-        </a> 
-                  <a href="#" target=" " style="padding: 10px;">
-          <input type="button" style="box-shadow: 1px 1px 2px black, 0 0 25px #133041, 0 0 5px darkblue;margin: 10px;
-          border: 1px solid white;padding: 5px;
-          font-size: 19px; background: none;color: white;cursor: pointer;" value="Customer Login">
-        </a>
-        </div>
-      </div>
+           <br/><br/>
+         <div class="box" style="margin-top:110px;">
+  <h2>Login</h2>
+  <form>
+    <div class="inputBox">
+      <input type="text" name="text" required onkeyup="this.setAttribute('value', this.value);" value="">
+      <label>Name</label>
     </div>
-    
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-10" style="font-weight: bold;padding: 20px 20px 20px 20px;font-size: 20px;color: white;">
-      At KISAN, we are always looking at the future. Technologies like Artificial Intelligence,<br/> Satellite imagery, Mechanization, Precision farming, automation, etc are turning strides. <br/>Farms are generating more DATA and taking agriculture towards a safer,<br/> healthier, sustainable future.<br/><br/>
-      You will see all this at KISAN 2020.
-Come, let us create a better future for farming.
-    </div>
-  </div>
-</div>
-
-
-
- <div class="container-fluid" style="padding:5px;">
-     
-             <div id="demo" class="carousel slide" data-ride="carousel">
-
-      <!-- Indicators -->
-      <ul class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
-      </ul>
-
-      <!-- The slideshow -->
-      <div class="carousel-inner i4">
-
-        <div class="carousel-item  active">
-          <img src="homecss/img/f2.jpg" alt="Basketball" title="basket-ball images"  width="100%" height="430px">
-        </div>
-        <div class="carousel-item">
-          <img src="homecss/img/f3.jpg" alt="Handball"  title="basket-ball images" width="100%" height="430px">
-        </div>
-        <div class="carousel-item">
-          <img src="homecss/img/f4.jpg" alt="2"  title="basket-ball images" width="100%" height="430px">
-        </div>
-         <div class="carousel-item">
-          <img src="homecss/img/f5.jpg" alt="Handball"  title="basket-ball images" width="100%" height="430px">
-        </div>
-         <div class="carousel-item">
-          <img src="homecss/img/f6.jpg" alt="Handball"  title="basket-ball images" width="100%" height="430px">
-        </div>
-      </div>
-
-      <!-- Left and right controls -->
-      <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#demo" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
-       <a class="carousel-control-next" href="#demo" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
-       <a class="carousel-control-next" href="#demo" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
-    </div>
-          </div>
-
-
-
-
-
-
-<div class="container">
-  <div class="row">
-
-    <div class="col-lg-10" style="font-weight: bold;padding: 20px 20px 20px 20px;font-size: 20px;color: white;">
-      <p style="font-weight: bold;">KISAN is getting LARGER</p>
-     In its 30th edition, it is 'the' place to experience the present and future of Indian Agriculture.</p> No other trade fair attracts so many farmers or such a</p> large number of Agri Professionals not only from India but also from abroad.
-<br/><br/>
-      Over 1,50,000+  farmers visiting KISAN and 500+ companies participating at KISAN, </br>
-you cannot miss the opportunity to be here.
-    </div>
-  </div>
-</div>
-
-
-
-
-
-<div class="container" style="padding: 15px;border:2px solid black;background-color:#19381F;margin-bottom: 20px;font-weight: bold;color: white;">
-
-<div class="map-section__overlay" style="text-align: center;margin-bottom: 8px;">
-              
-                <h3 class="h2 text-spacing" style="color: white;">Venue &amp; Timings</h3>
-              
-              
-                <div class="rte-setting text-spacing"><p><strong>KISAN - India's Largest Agri Show,
-16-20 Dec 2020<br>Moshi, Pune,&nbsp;India
-Timings :&nbsp;9:00am - 5:00pm&nbsp;</strong></p></div>
-                
-                  <a href="https://maps.google.com?daddr=Sector 5, Moshi, Pune" class="btn btn--secondary btn--small js-no-transition" target="_blank"> <input style="cursor:pointer; padding: 10px; border: 1px solid blue;border-radius: 15px; background-color: green;color: white;font-weight: bold;" type="button" name="" value="GET DIRECTION"></a>
-                
-             
-
-            </div>
-
-    <div style="margin-bottom: 20px;">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.549083149827!2d81.60283504924227!3d21.249722185809784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dde213f66723%3A0x21543965c50c43c7!2sNational%20Institute%20of%20Technology%2C%20Raipur!5e0!3m2!1sen!2sin!4v1579175799388!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
    
-    
-  </div>
+    <div class="inputBox">
+      <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);" value="">
+      <label>Email</label>
+    </div>
+    <div class="inputBox">
+      <input type="password" name="password" required value=""
+             onkeyup="this.setAttribute('value', this.value);"
+             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+             title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+      <label>Password</label>
+    </div>
+    <input type="submit" name="sign-in" value="Sign In">
+  </form>
 </div>
+      </div>
+    </div>
 
 
 
-
-
-
-
-        <footer class="ftco-footer ftco-section ftco-no-pb" style="padding-top: 25px;">
+        <footer class="ftco-footer ftco-section ftco-no-pb" style="padding-top: 55px;">
           <div class="container-fluid px-md-5">
             <div class="row mb-5">
               <div class="col-md">
@@ -246,11 +213,9 @@ Timings :&nbsp;9:00am - 5:00pm&nbsp;</strong></p></div>
         </div>
        
         </footer>
-  
-      
-        <!-- loader -->
-      
-      
+
+
+
       
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -268,5 +233,5 @@ Timings :&nbsp;9:00am - 5:00pm&nbsp;</strong></p></div>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
         <script src="js/google-map.js"></script>
         <script src="js/main.js"></script>
-  </body>
+</body>
 </html>
